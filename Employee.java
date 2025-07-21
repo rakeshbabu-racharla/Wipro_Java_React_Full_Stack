@@ -12,21 +12,24 @@ class Employee {
 		this.employee_salary = employee_salary;	
 	}
 
-	
+	// Method display Employee details
 	public void showEmployeeDetails(){
 		System.out.println("Employee Id: " + employee_id);
 		System.out.println("Employee Name: " + this.employee_name);
 		System.out.println("Employee Company : " + employee_company);
 	}
 
+	// Method to return employee_salary
 	public int getEmployeeSalary(){
 		return this.employee_salary ;
 	}
 
+	// Method to display employee_company
 	public void showEmployeeCompany(){
 		System.out.println(employee_company);
 	}
 
+	// Main method ( execution starting point)
 	public static void main(String[] args){
 		Employee e1 = new Employee(101,"Ram",30000);
 		e1.showEmployeeDetails();
