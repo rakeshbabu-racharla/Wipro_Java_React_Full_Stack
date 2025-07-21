@@ -31,6 +31,7 @@ class Employee {
 
 	// Main method ( execution starting point)
 	public static void main(String[] args){
+		// Employee object created with values 101 , "Ram" , 30000
 		Employee e1 = new Employee(101,"Ram",30000);
 		e1.showEmployeeDetails();
 		System.out.println(e1.getEmployeeSalary());
