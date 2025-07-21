@@ -33,8 +33,14 @@ class Employee {
 	public static void main(String[] args){
 		// Employee object created with values 101 , "Ram" , 30000
 		Employee e1 = new Employee(101,"Ram",30000);
+		
+		// method call to showEmployeeDetails()
 		e1.showEmployeeDetails();
+
+		// method call to get employee_salary from getEmployeeSalary() of e1 object
 		System.out.println(e1.getEmployeeSalary());
+
+		// method call to showEmployeeCompany
 		e1.showEmployeeCompany();
 	}
 
