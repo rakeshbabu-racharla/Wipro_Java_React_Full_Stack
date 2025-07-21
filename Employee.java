@@ -1,10 +1,11 @@
 class Employee {
-
+	
 	int employee_id ;
 	String employee_name ;
 	static String employee_company = "Wipro" ;
 	int employee_salary ;
 
+	// Non-static variables are being initialized
 	Employee(int employee_id , String employee_name , int employee_salary ) {
 		this.employee_id = employee_id ;
 		this.employee_name = employee_name;
