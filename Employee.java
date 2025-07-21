@@ -1,0 +1,36 @@
+class Employee {
+
+	int employee_id ;
+	String employee_name ;
+	static String employee_company = "Wipro" ;
+	int employee_salary ;
+
+	Employee(int employee_id , String employee_name , int employee_salary ) {
+		this.employee_id = employee_id ;
+		this.employee_name = employee_name;
+		this.employee_salary = employee_salary;	
+	}
+
+	
+	public void showEmployeeDetails(){
+		System.out.println("Employee Id: " + employee_id);
+		System.out.println("Employee Name: " + this.employee_name);
+		System.out.println("Employee Company : " + employee_company);
+	}
+
+	public int getEmployeeSalary(){
+		return this.employee_salary ;
+	}
+
+	public void showEmployeeCompany(){
+		System.out.println(employee_company);
+	}
+
+	public static void main(String[] args){
+		Employee e1 = new Employee(101,"Ram",30000);
+		e1.showEmployeeDetails();
+		System.out.println(e1.getEmployeeSalary());
+		e1.showEmployeeCompany();
+	}
+
+}
